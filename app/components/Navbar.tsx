@@ -10,13 +10,12 @@ export default function Navbar() {
               <Link href="/" className="text-white/90 no-underline hover:text-white">
                       Akshay Varma</Link>
               </h1>
-              {/* help me write links to navbar based on tailwind sizes */}
               <div className="flex flex-row space-x-4 place-content-center">
-                  <Link href="/blog" className="text-white/90 no-underline hover:text-white">
-                      Blog</Link>
-                  <Link href="/projects" className="text-white/90 no-underline hover:text-white">
+                  <Link href="https://av10.tech" className="text-white/90 no-underline hover:text-white">
+                      Portfolio</Link>
+                  <Link href="https://av10.tech/projects" className="text-white/90 no-underline hover:text-white">
                       Projects</Link>
-                  <Link href="/about" className="text-white/90 no-underline hover:text-white">
+                  <Link href="https://av10.tech/about" className="text-white/90 no-underline hover:text-white">
                       About</Link>
 
 
