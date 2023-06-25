@@ -4,6 +4,10 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 
+
+// Add other languages you want to support
+
+
 const postsDirectory = path.join(process.cwd(), 'blogposts');
 
 export function getSortedPostsData() {
@@ -42,7 +46,9 @@ export async function getPostData(id: string) {
 
     const matterResult = matter(fileContents); // Combine the data with the id
 
-    const processedContent = await remark().use(html).process(matterResult.content);
+    const processedContent = await remark()
+        .use(html)
+        .process(matterResult.content)
     const contentHtml = processedContent.toString();
 
     const blogPostWithHTML: Blogpost & { contentHtml: string } = {
